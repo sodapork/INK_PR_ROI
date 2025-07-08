@@ -98,29 +98,29 @@
             styles.id = 'pr-roi-styles';
             styles.textContent = `
                 .pr-roi-widget {
-                    font-family: 'Georgia', 'Times New Roman', serif;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
                     max-width: 600px;
                     margin: 0 auto;
-                    border: 2px solid #000;
+                    border-radius: 12px;
                     overflow: hidden;
+                    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
                 }
                 
                 .pr-roi-light {
                     background: #ffffff;
-                    color: #000;
+                    color: #333;
                 }
                 
                 .pr-roi-dark {
-                    background: #000;
+                    background: #1a1a1a;
                     color: #ffffff;
                 }
                 
                 .pr-roi-header {
                     padding: 24px;
                     text-align: center;
-                    background: #000;
+                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
                     color: white;
-                    border-bottom: 2px solid #000;
                 }
                 
                 .pr-roi-header h3 {
@@ -154,54 +154,50 @@
                 .form-group select {
                     width: 100%;
                     padding: 12px;
-                    border: 2px solid #000;
+                    border: 2px solid #e1e5e9;
+                    border-radius: 8px;
                     font-size: 16px;
                     transition: border-color 0.2s;
                     box-sizing: border-box;
-                    font-family: 'Georgia', 'Times New Roman', serif;
                 }
                 
                 .pr-roi-dark .form-group input,
                 .pr-roi-dark .form-group select {
-                    background: #000;
-                    border-color: #fff;
+                    background: #2a2a2a;
+                    border-color: #404040;
                     color: white;
                 }
                 
                 .form-group input:focus,
                 .form-group select:focus {
                     outline: none;
-                    border-color: #000;
-                    background: #f8f8f8;
+                    border-color: #667eea;
                 }
                 
                 .pr-roi-btn {
                     width: 100%;
                     padding: 14px;
-                    background: #000;
+                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
                     color: white;
-                    border: 2px solid #000;
+                    border: none;
+                    border-radius: 8px;
                     font-size: 16px;
-                    font-weight: 400;
+                    font-weight: 600;
                     cursor: pointer;
-                    transition: all 0.2s;
-                    font-family: 'Georgia', 'Times New Roman', serif;
+                    transition: transform 0.2s;
                 }
                 
                 .pr-roi-btn:hover {
-                    background: #fff;
-                    color: #000;
+                    transform: translateY(-2px);
                 }
                 
                 .pr-roi-results {
                     padding: 24px;
-                    background: #fff;
-                    border-top: 1px solid #000;
+                    background: #f8f9fa;
                 }
                 
                 .pr-roi-dark .pr-roi-results {
-                    background: #000;
-                    border-top: 1px solid #fff;
+                    background: #2a2a2a;
                 }
                 
                 .pr-roi-results h4 {
@@ -220,44 +216,45 @@
                 .result-card {
                     text-align: center;
                     padding: 16px;
-                    background: #fff;
-                    border: 1px solid #000;
+                    background: white;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
                 }
                 
                 .pr-roi-dark .result-card {
-                    background: #000;
-                    border: 1px solid #fff;
+                    background: #333;
                 }
                 
                 .result-value {
                     font-size: 24px;
-                    font-weight: 400;
-                    color: #000;
+                    font-weight: 700;
+                    color: #667eea;
                     margin-bottom: 8px;
                 }
                 
                 .result-label {
                     font-size: 12px;
-                    color: #000;
+                    color: #666;
                     text-transform: uppercase;
                     letter-spacing: 0.5px;
                 }
                 
                 .pr-roi-dark .result-label {
-                    color: #fff;
+                    color: #aaa;
                 }
                 
                 .pr-roi-disclaimer {
                     padding: 16px;
-                    background: #fff;
-                    border: 1px solid #000;
+                    background: #fff3cd;
+                    border: 1px solid #ffeaa7;
+                    border-radius: 8px;
                     font-size: 12px;
                     line-height: 1.4;
                 }
                 
                 .pr-roi-dark .pr-roi-disclaimer {
-                    background: #000;
-                    border: 1px solid #fff;
+                    background: #2d1b69;
+                    border-color: #4c1d95;
                 }
                 
                 .pr-roi-disclaimer p {
